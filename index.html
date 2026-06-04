@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeAlpha Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Modern Image Gallery</h1>
+
+<div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('animal')">Animals</button>
+    <button onclick="filterImages('city')">City</button>
+</div>
+
+<div class="gallery">
+
+    <img src="images/image1.jpeg"
+         class="gallery-item nature"
+         onclick="openLightbox(0)">
+
+    <img src="images/image2.jpg"
+         class="gallery-item animal"
+         onclick="openLightbox(1)">
+
+    <img src="images/image3.jpg"
+         class="gallery-item animal"
+         onclick="openLightbox(2)">
+
+    <img src="images/image4.jpg"
+         class="gallery-item nature"
+         onclick="openLightbox(3)">
+
+    <img src="images/image5.jpg"
+         class="gallery-item city"
+         onclick="openLightbox(4)">
+
+    <img src="images/image6.jpg"
+         class="gallery-item city"
+         onclick="openLightbox(5)">
+
+</div>
+
+<div id="lightbox">
+
+    <span class="close" onclick="closeLightbox()">×</span>
+
+    <button class="prev" onclick="prevImage()">❮</button>
+
+    <img id="lightbox-img">
+
+    <button class="next" onclick="nextImage()">❯</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
