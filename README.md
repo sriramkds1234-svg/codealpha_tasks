@@ -15,9 +15,15 @@ Features:
 * Lightbox Viewer
 * Previous/Next Navigation
 
-## Task 2 - Calculator
+## Task 2 - Calculator ✅
 
-To be added
+Features:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Clear Button
+- Delete Button
 
 
 
