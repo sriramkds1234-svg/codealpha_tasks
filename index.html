@@ -1,63 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CodeAlpha Image Gallery</title>
-<link rel="stylesheet" href="style.css">
+    <title>CodeAlpha Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>Modern Image Gallery</h1>
+<div class="calculator">
+    <h1>Modern Calculator</h1>
+    <input type="text" id="display" readonly>
 
-<div class="filter-buttons">
-    <button onclick="filterImages('all')">All</button>
-    <button onclick="filterImages('nature')">Nature</button>
-    <button onclick="filterImages('animal')">Animals</button>
-    <button onclick="filterImages('city')">City</button>
-</div>
+    <div class="buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendValue('/')">/</button>
+        <button onclick="appendValue('*')">*</button>
+        <button onclick="deleteLast()">DEL</button>
 
-<div class="gallery">
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button onclick="appendValue('-')">-</button>
 
-    <img src="image1.jpeg"
-         class="gallery-item nature"
-         onclick="openLightbox(0)">
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button onclick="appendValue('+')">+</button>
 
-    <img src="image2.jpg"
-         class="gallery-item animal"
-         onclick="openLightbox(1)">
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button onclick="calculate()">=</button>
 
-    <img src="image3.jpg"
-         class="gallery-item animal"
-         onclick="openLightbox(2)">
-
-    <img src="image4.jpg"
-         class="gallery-item nature"
-         onclick="openLightbox(3)">
-
-    <img src="image5.jpg"
-         class="gallery-item city"
-         onclick="openLightbox(4)">
-
-    <img src="image6.jpg"
-         class="gallery-item city"
-         onclick="openLightbox(5)">
-
-</div>
-
-<div id="lightbox">
-
-    <span class="close" onclick="closeLightbox()">×</span>
-
-    <button class="prev" onclick="prevImage()">❮</button>
-
-    <img id="lightbox-img">
-
-    <button class="next" onclick="nextImage()">❯</button>
-
+        <button onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+    </div>
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
